@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+.float-left{
+    float: left;
+  }
+
+
+
+body{
+    background-color: #FDFEFF;
+}
+
+.container{
+    margin: auto;
+    background-image: url(../img/gatto.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 33.33%;
+    height: 100vh;
+    border-width:5px;  
+    border-style:groove;
+    border-radius: 10px;
+
+}
+
+section{
+    background-color: #E1C6CC;
+   /*  opacity: 0.9; */
+    border: 3px solid brown;
+    border-radius: 15px;
+    margin-top: 270px;
+    width: 60%;
+    height: 400px;
+}
+
+h2{
+    color: darkred;
+    text-align: center;
+    font-family: 'Original Surfer', cursive;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.mailes{
+    background-color: #C2A2A2;
+    width: 90%;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+
+
+section ul{
+    list-style: none;
+  }
+
+
+  
+section ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+
+.animale{
+      font-size: 20px;
+      text-align: center;
+  }
+
+.gatto{
+      padding: 5px;
+      border-radius: 100%;
+      width: 50px;
+      height: 30px;
+      animation: 
+        nudge 5s linear infinite alternate;
+  }
+
+
+span{
+      font-size: 23px;
+      width: 30%;
+      font-family: 'Dancing Script', cursive;
+  }
+
+
+.impronta{
+      font-size: 20px;
+      line-height: 18px;
+  }
+
+
+
+
+
+@keyframes nudge {
+    0%, 100% {
+        transform: translate(0,0);
+
+    }
+    50%{
+        transform: translate(25px,0);
+        
+
+    }
+
+}
